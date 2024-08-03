@@ -1,0 +1,97 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:rgb(57, 44, 167);
+} 
+
+.start-btn, .next-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
+
+
+#end-game-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+#score {
+  font-size: 1.5rem; /* Increase font size for better visibility */
+  font-weight: bold; /* Make the score bold */
+  margin-top: 20px; /* Add some space above the score */
+  color: #333; /* Dark color for the score text */
+  text-align: center; /* Center the score text */
+}
+
+.correct {
+  background-color: #4CAF50;
+}
+
+.wrong {
+  background-color: #f44336;
+}
